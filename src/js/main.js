@@ -65,6 +65,13 @@ function toDoList() {
   });
 }
 
+inp.addEventListener("keypress", (keyPressed) => {
+    const keyEnter = 13;
+    if (keyPressed.which == keyEnter) {
+        toDoList();
+    }
+});
+
 let error = document.querySelector(".error");
 
 btn.addEventListener("click", function () {
